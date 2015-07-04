@@ -10,8 +10,8 @@ from sklearn.learning_curve import learning_curve,validation_curve
 from sklearn import metrics
 from pprint import pprint
 def calculate_result(actual,pred):
-    precision=metrics.precision_score(actual,pred)*0.8474
-    recall=metrics.recall_score(actual,pred)*0.8474
+    precision=metrics.precision_score(actual,pred)
+    recall=metrics.recall_score(actual,pred)
     f1=2*(precision*recall)/(precision+recall)
     print 'precision:{0:.4f}'.format(precision)
     print 'recall:{0:0.4f}'.format(recall);
